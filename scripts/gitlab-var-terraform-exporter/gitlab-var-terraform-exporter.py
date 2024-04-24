@@ -41,7 +41,6 @@ def write_tfvars_tf(variables, file_path):
 
 def main():
     usage = """
-    Usage:
     python gitlab-var-terraform-exporter.py --host <gitlabhost> --project <project_id> --output <output_file>
     Example:
     python gitlab-var-terraform-exporter.py --host https://host.gitlab.com --project 555 --output converted_variables.tfvars.tf
