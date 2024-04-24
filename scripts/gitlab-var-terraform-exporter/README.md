@@ -12,6 +12,12 @@ Export and convert variables from Gitlab project to terraform tfvar file
 
 ## Usage
 
+### Requirements install
+```shell
+$ pip3 install -r requirements.txt
+```
+
+### Help
 ```shell
 $ python gitlab-var-terraform-exporter.py -h
 usage:
@@ -25,7 +31,7 @@ options:
   --project PROJECT  GitLab project ID
   --output OUTPUT    Output file name for .tfvars.tf
 ```
-
+### Running
 ```shell
 $ python gitlab-var-exporter.py --host https://host.gitlab.com --project 555 --output converted_variables.tfvars.tf
 ```
