@@ -21,7 +21,9 @@ $ pip3 install -r requirements.txt
 ```shell
 $ python gitlab-var-terraform-exporter.py -h
 usage:
-    python script_name.py --host <gitlabhost> --project <project_id> --output <output_file>
+    python gitlab-var-terraform-exporter.py --host <gitlabhost> --project <project_id> --output <output_file>
+example:
+    python gitlab-var-terraform-exporter.py --host https://host.gitlab.com --project 555 --output converted_variables.tfvars.tf
 
 Fetch GitLab variables and create Terraform .tfvars.tf file
 
