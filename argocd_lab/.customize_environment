@@ -1,0 +1,6 @@
+#!/bin/sh
+docker compose up -d
+wait 60
+helm repo add argo https://argoproj.github.io/argo-helm
+wait 10
+helm install argo-cd argo/argo-cd --create-namespace --namespace argocd
